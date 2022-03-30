@@ -35,7 +35,7 @@ class FileGenerator : AbstractProcessor() {
     }
 
     private fun generateClass(className: String, pack: String) {
-        val fileName = className
+        val fileName = className+"Dao"
         val fileContent = KotlinClassBuilder(fileName, pack).getContent()
 
         val kaptKotlinGeneratedDir = processingEnv.options[KAPT_KOTLIN_GENERATED_OPTION_NAME]
