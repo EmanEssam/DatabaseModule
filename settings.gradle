@@ -16,3 +16,4 @@ rootProject.name = "DatabaseModule"
 include ':app'
 include ':annotation'
 include ':codeGenerator'
+include ':databaselibrary'
