@@ -2,7 +2,7 @@ package com.test.databasemodule.data.repository
 
 import androidx.annotation.MainThread
 import com.test.databasemodule.Post
-import com.test.databasemodule.PostDao
+import com.test.databasemodule.data.local.PostDao
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
@@ -24,6 +24,10 @@ class PostsRepository @Inject constructor(
      */
     fun getAllPosts(): Flow<List<Post>> {
         return postsDao.getAllPosts()
+    }
+
+    suspend fun addPosts(posts: List<Post>) {
+        postsDao.insertPosts(posts)
     }
 
     /**

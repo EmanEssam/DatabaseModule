@@ -13,6 +13,7 @@ class KotlinClassBuilder(
    import androidx.room.OnConflictStrategy
    import androidx.room.Query
    import kotlinx.coroutines.flow.Flow
+   import com.test.databasemodule.$className
 
  
    @Dao

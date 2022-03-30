@@ -6,7 +6,7 @@ import com.test.databasemodule.Post
 
 
 object DatabaseMigrations {
-    const val DB_VERSION = 2
+    const val DB_VERSION = 0
 
     val MIGRATIONS: Array<Migration>
         get() = arrayOf<Migration>(
